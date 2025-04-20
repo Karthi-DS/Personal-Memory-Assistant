@@ -1,0 +1,99 @@
+{
+    "PersonalInfo": {
+        "Name": "Kartheesvaran",
+        "Occupation": "software developer"
+    },
+    "Schedule": {
+        "2025-03-13": {
+            "Activity": "Meeting with an investor regarding a new startup funding opportunity.",
+            "City": "Mumbai"
+        },
+        "2025-03-14": {
+            "Activity": "Conducted a workshop on scaling businesses for entrepreneurs.",
+            "City": "Mumbai"
+        },
+        "2025-03-15": {
+            "Activity": "Visited a manufacturing plant for a supply chain consultation.",
+            "City": "Pune"
+        },
+        "2025-03-16": {
+            "Activity": "Met with a potential business partner to discuss expansion strategies.",
+            "City": "Pune"
+        },
+        "2025-03-17": {
+            "Activity": "Guest speaker at a business conference on market trends.",
+            "City": "Bangalore"
+        },
+        "2025-03-18": {
+            "Activity": "Private consultation with a startup on financial planning.",
+            "City": "Bangalore"
+        },
+        "2025-03-19": {
+            "Activity": "Client meeting regarding a marketing strategy for a retail brand.",
+            "City": "Hyderabad"
+        },
+        "2025-03-20": {
+            "Activity": "Site visit to a client's office for process optimization assessment.",
+            "City": "Hyderabad"
+        },
+        "2025-03-21": {
+            "Activity": "Negotiation meeting with international investors.",
+            "City": "Delhi"
+        },
+        "2025-03-22": {
+            "Activity": "Panel discussion on the future of AI in business.",
+            "City": "Delhi"
+        },
+        "2025-03-23": {
+            "Activity": "Visited a tech incubator to mentor startups.",
+            "City": "Noida"
+        },
+        "2025-03-24": {
+            "Activity": "Strategy session with a logistics company.",
+            "City": "Chennai"
+        },
+        "2025-03-25": {
+            "Activity": "Signed a deal for a consulting partnership with a corporate firm.",
+            "City": "Chennai"
+        },
+        "2025-03-26": {
+            "Activity": "Keynote speech at an entrepreneurship summit.",
+            "City": "Kolkata"
+        },
+        "2025-03-27": {
+            "Activity": "Chill at home",
+            "City": "Kolkata"
+        },
+        "2025-03-28": {
+            "Activity": "Advisory session for a hospitality startup.",
+            "City": "Jaipur"
+        },
+        "2025-03-29": {
+            "Activity": "Visited a resort chain to discuss rebranding strategies.",
+            "City": "Jaipur"
+        },
+        "2025-03-30": {
+            "Activity": "Workshop on financial management for SMEs.",
+            "City": "Ahmedabad"
+        },
+        "2025-03-31": {
+            "Activity": "Negotiation with a supplier for an FMCG brand.",
+            "City": "Ahmedabad"
+        },
+        "2025-04-01": {
+            "Activity": "Annual review meeting with stakeholders.",
+            "City": "Mumbai"
+        },
+        "2025-04-02": {
+            "Activity": "Presentation on market expansion opportunities.",
+            "City": "Mumbai"
+        },
+        "2025-04-03": {
+            "Activity": "Finalizing contracts for new business collaborations.",
+            "City": "Mumbai"
+        },
+        "2025-04-04": {
+            "Activity": "Chill at home"
+        }
+    }
+}
