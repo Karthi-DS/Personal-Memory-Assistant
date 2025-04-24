@@ -20,7 +20,7 @@ if not GOOGLE_API_KEY:
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-MODEL_NAME = "gemini-2.5-pro-exp-03-25" # Or "gemini-1.5-flash-latest"
+MODEL_NAME = "gemini-2.5-pro-exp-03-25" 
 
 SAFETY_SETTINGS = {
     HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
@@ -55,14 +55,14 @@ def timeout(seconds=60):
         return wrapper
     return decorator
 
-class Alpha:
+class DocumentAlpha:
     tool_declarations: List[FunctionDeclaration] = []
     registered_functions: Dict[str, callable] = {}
 
     def __init__(self):
         self.history = [] # History managed by the ChatSession object internally now
         # --- REFINED SYSTEM PROMPT ---
-        self.system_prompt = """You are Alpha, an advanced personal assistant specializing in document analysis and information recall.
+        self.system_prompt = """You are DocumentAlpha, an advanced personal assistant specializing in document analysis and information recall.
 You will be provided with context from uploaded files directly *for the current query*.
 Your tasks are to:
 1. Understand the content of the provided file(s) for the current turn.
@@ -80,10 +80,10 @@ Your tasks are to:
             )
             # Initialize chat history (empty for new session)
             self.chat = self.model.start_chat(history=[])
-            print(f"DEBUG: Alpha initialized with model {MODEL_NAME}. Chat session started.")
+            print(f"DEBUG: DocumentAlpha initialized with model {MODEL_NAME}. Chat session started.")
             self._ensure_memory_file_exists()
         except Exception as e:
-             print(f"FATAL ERROR during Alpha initialization: {e}")
+             print(f"FATAL ERROR during DocumentAlpha initialization: {e}")
              traceback.print_exc()
              raise
 
@@ -506,7 +506,7 @@ Your tasks are to:
 
 # --- Tool Function Definitions ---
 
-@Alpha.add_func
+@DocumentAlpha.add_func
 def save_as_memory(title: str, content: str) -> str:
     """Saves or updates information under a given title in the memory file (memory.json).
 
@@ -595,7 +595,7 @@ def save_as_memory(title: str, content: str) -> str:
         traceback.print_exc()
         return f"Error: An unexpected system error occurred while trying to save memory for '{title}': {str(e)}"
 
-@Alpha.add_func
+@DocumentAlpha.add_func
 def retrieve_memory(title: str) -> str:
     """Retrieves saved information from memory using its title.
 
@@ -672,9 +672,9 @@ def retrieve_memory(title: str) -> str:
 
 # --- Example Usage (Optional - usually run from a separate script) ---
 if __name__ == "__main__":
-    print("Initializing Alpha...")
-    alpha_instance = Alpha()
-    print("Alpha initialized. Available tools:", [d.name for d in alpha_instance.tool_declarations])
+    print("Initializing DocumentAlpha...")
+    alpha_instance = DocumentAlpha()
+    print("DocumentAlpha initialized. Available tools:", [d.name for d in alpha_instance.tool_declarations])
 
     # Example Interaction Flow:
     print("\n--- Interaction 1: Analyze and Save ---")
