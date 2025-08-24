@@ -1,9 +1,158 @@
 {
-    "PersonalInfo": {},
-    "Reminders": [],
+    "PersonalInfo": {
+        "name": "Karthi"
+    },
+    "Reminders": [
+        {
+            "created_at": "2025-04-24 08:00:00",
+            "id": "a12b3c4d-5678-9012-3456-abcdef123456",
+            "message": "Morning meditation",
+            "reminder_time": "2025-04-24 08:15:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-24 09:30:00",
+            "id": "b23c4d5e-6789-0123-4567-bcdefa234567",
+            "message": "Submit weekly report",
+            "reminder_time": "2025-04-24 10:00:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-23 20:00:00",
+            "id": "c34d5e6f-7890-1234-5678-cdefab345678",
+            "message": "Water the plants",
+            "reminder_time": "2025-04-24 07:00:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-22 18:30:00",
+            "id": "d45e6f70-8901-2345-6789-defabc456789",
+            "message": "Prepare slides for presentation",
+            "reminder_time": "2025-04-24 12:00:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-24 14:00:00",
+            "id": "e56f7081-9012-3456-7890-efabcd567890",
+            "message": "Evening walk with Rakesh",
+            "reminder_time": "2025-04-25 18:30:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-24 15:00:00",
+            "id": "f67g8192-0123-4567-8901-fbcdea678901",
+            "message": "Team call with US client",
+            "reminder_time": "2025-04-25 20:00:00",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-24 22:49:37",
+            "id": "38d254fe-3b43-4f33-bc45-db8e006ae767",
+            "message": "Meeting",
+            "reminder_time": "2025-04-24 22:50:37",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-25 00:00:49",
+            "id": "74439e03-ec45-41ad-ae75-2ff7cdd303c0",
+            "message": "Meeting",
+            "reminder_time": "2025-04-25 00:01:49",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-25 00:43:06",
+            "id": "be839cc3-33fe-4da3-9548-142f4edda836",
+            "message": "I have a meeting",
+            "reminder_time": "2025-04-25 00:45:06",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-25 10:21:49",
+            "id": "513a197f-62d4-44ce-9903-980360b3c664",
+            "message": "I have a meeting",
+            "reminder_time": "2025-04-25 10:22:49",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-25 10:23:22",
+            "id": "679c548b-7bd4-4c59-bdeb-ecc6839b95bf",
+            "message": "I have a meeting",
+            "reminder_time": "2025-04-25 10:24:22",
+            "status": "triggered"
+        },
+        {
+            "created_at": "2025-04-25 22:54:09",
+            "id": "04848127-1690-436b-b438-f7b9add91f4d",
+            "message": "Meeting",
+            "reminder_time": "2025-04-25 23:54:09",
+            "status": "triggered"
+        }
+    ],
     "Schedule": {
+        "2025-04-19": {
+            "Event": "Attended college reunion at Coimbatore",
+            "Highlights": [
+                "Met old friends",
+                "Gave a speech",
+                "Group photo session"
+            ],
+            "Mood": "Happy"
+        },
+        "2025-04-20": {
+            "Notes": "Faced some issues with authentication token refresh",
+            "Work": "Completed backend API integration for project Zeta"
+        },
+        "2025-04-21": {
+            "Reflection": "Math section was easier than expected",
+            "Test": "TANCET test at Salem"
+        },
+        "2025-04-22": {
+            "Meeting": "Meeting in Chennai",
+            "Topics": [
+                "Budget planning",
+                "Q2 roadmap",
+                "Team expansion"
+            ]
+        },
+        "2025-04-23": {
+            "Meeting": "SDE project meeting at Chennai",
+            "Outcomes": [
+                "Decided on microservice split",
+                "Assigned frontend tasks"
+            ]
+        },
         "2025-04-24": {
-            "Meeting": "I have a meeting"
+            "Journal": "Felt productive. Had good focus throughout the day.",
+            "Meals": [
+                "Oats for breakfast",
+                "Veg biryani for lunch",
+                "Chapati & dal for dinner"
+            ],
+            "Tasks Completed": [
+                "Fixed bug #1123",
+                "Read 2 chapters of React book"
+            ]
+        },
+        "2025-04-25": {
+            "Packing": [
+                "Laptop",
+                "Charger",
+                "Projector remote",
+                "Demo folder"
+            ],
+            "Plan": "Visit to Erode for client demo"
+        },
+        "2025-04-26": {
+            "Gift": "Pack silver bowl set",
+            "Reminder": "Cousin's wedding at Madurai",
+            "Travel": "Train at 9:15 AM from Chennai Central"
+        },
+        "2025-04-27": {
+            "Meeting": "SDE project on ecommerce in Coimbatore"
+        },
+        "2025-04-28": {
+            "Department Event": "Department association event will happen.",
+            "Reunion": "Attended school reunion function"
         }
     }
 }

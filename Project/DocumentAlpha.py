@@ -20,7 +20,7 @@ if not GOOGLE_API_KEY:
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-MODEL_NAME = "gemini-2.5-pro-exp-03-25" 
+MODEL_NAME = "gemini-1.5-pro" 
 
 SAFETY_SETTINGS = {
     HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
@@ -505,6 +505,58 @@ Your tasks are to:
         return [Tool(function_declarations=valid_declarations)]
 
 # --- Tool Function Definitions ---
+
+@DocumentAlpha.add_func
+def show_memory() -> str:
+    """Lists all saved memory titles and their timestamps.
+
+    Returns:
+        str: A formatted string with the list of memories or an error message.
+    """
+    print("DEBUG: Tool 'show_memory' called.")
+    try:
+        if not os.path.exists(MEMORY_FILE):
+            return "Memory file not found. No memories saved yet."
+
+        with open(MEMORY_FILE, 'r', encoding='utf-8') as f:
+            file_content = f.read()
+
+        if not file_content.strip():  # Check for empty file
+             return "Memory file is empty. No memories saved yet."
+        
+        try:
+            memories = json.loads(file_content)
+            if not isinstance(memories, list):
+                raise ValueError("Invalid memory file format (not a list).")
+        except (json.JSONDecodeError, ValueError) as json_err:
+            print(f"ERROR decoding JSON in 'show_memory': {json_err}. Attempting to reset file.")
+            # Attempt to reset
+            try:
+                with open(MEMORY_FILE, 'w', encoding='utf-8') as reset_f:
+                    json.dump([], reset_f)  # Save an empty list
+                return "Memory file reset due to invalid format. No memories saved."
+            except Exception as reset_err:
+                print(f"ERROR resetting memory file: {reset_err}. Data loss likely!")
+                return "Error: Could not read or reset the memory file. Data might be lost!"
+
+
+        if not memories: # Check for empty list after decoding/fixing
+            return "No memories saved yet."
+
+        output = ""
+        for mem in memories:
+            if isinstance(mem, dict):
+                title = mem.get('title', '[Untitled]')
+                timestamp = mem.get('timestamp', '[Unknown Timestamp]')
+                output += f"- **{title}**: {timestamp}\n" # Markdown list item format
+        return output.strip() or "No memories found (unexpected)." # Handle potential edge case
+
+    except Exception as e:
+        print(f"ERROR in 'show_memory': {e}")
+        traceback.print_exc()
+        return f"Error: An unexpected error occurred while listing memories: {e}"
+
+
 
 @DocumentAlpha.add_func
 def save_as_memory(title: str, content: str) -> str:

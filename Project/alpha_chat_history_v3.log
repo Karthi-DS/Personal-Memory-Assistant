@@ -586,3 +586,91 @@ print(default_api.add_daily_memory(date_input = "april 27,2025", label = "meetin
 2025-04-24 18:36:31 | Alpha: OK. I've added a memory for April 24, 2025:  Meeting - I have a meeting.
 
 --------------------
+2025-04-24 21:56:35 | User: remind me I have a meeting at 9:57 today
+2025-04-24 21:56:35 | Alpha: OK. I've set a reminder for you:  "I have a meeting" at 9:57 AM today.  (Please note: the system indicates that the time you specified is in the past).
+
+--------------------
+2025-04-24 21:57:18 | User: set my name is karthi
+2025-04-24 21:57:18 | Alpha: OK. I've saved your name as Karthi.
+
+--------------------
+2025-04-24 21:57:27 | User: what is my name
+2025-04-24 21:57:27 | Alpha: Your name is Karthi.
+
+--------------------
+2025-04-24 22:49:07 | User: what happened in april 22,2025
+2025-04-24 22:49:07 | Alpha: On April 22nd, 2025, you had a meeting in Chennai focusing on budget planning, the Q2 roadmap, and team expansion.
+
+--------------------
+2025-04-24 22:49:38 | User: remind me I have a meeting at 10:50PM today\
+2025-04-24 22:49:38 | Alpha: Okay, I've set a reminder for a meeting at 10:50 PM today.
+
+--------------------
+2025-04-24 23:57:54 | User: what happened in 24 april,2025
+2025-04-24 23:57:54 | Alpha: On April 24th, 2025, you felt productive and focused throughout the day.  Your meals included oats for breakfast, veg biryani for lunch, and chapati and dal for dinner. You also completed tasks such as fixing bug #1123 and reading two chapters of your React book.
+
+--------------------
+2025-04-24 23:58:45 | User: save I have a meeting for sde project on ecommerce in coimbatore at 27,april,2025
+2025-04-24 23:58:45 | Alpha: OK. I've saved that you have a meeting for the SDE project on e-commerce in Coimbatore on April 27th, 2025.
+
+--------------------
+2025-04-25 00:00:50 | User: remind me I have a meeting at 12:01AM today
+2025-04-25 00:00:50 | Alpha: Okay, I've set a reminder for a meeting at 12:01 AM today.
+
+--------------------
+2025-04-25 00:22:21 | User: what happened in 24 april 20225
+2025-04-25 00:22:21 | Alpha: Error: AMBIGUOUS_DATE: Could not interpret date string: '24 april 20225'. Please specify the date more precisely.  I need to know the correct year.
+
+--------------------
+2025-04-25 00:22:31 | User: what happened in 24 april 202\5
+2025-04-25 00:22:31 | Alpha: Error: AMBIGUOUS_DATE: Could not interpret date string: '24 april 202\\5'. Please specify the date more precisely. I need to know the correct year.
+
+--------------------
+2025-04-25 00:22:39 | User: what happened in 24 april 2025
+2025-04-25 00:22:39 | Alpha: On April 24th, 2025, you recorded the following:
+
+* **Journal:** Felt productive. Had good focus throughout the day.
+* **Meals:** Oats for breakfast, Veg biryani for lunch, Chapati & dal for dinner.
+* **Tasks Completed:** Fixed bug #1123, Read 2 chapters of React book.
+
+--------------------
+2025-04-25 00:24:18 | User: remind me I have a meeting at 1:25 AM today
+2025-04-25 00:24:18 | Alpha: OK. I've set a reminder for a meeting at 1:25 AM today.
+
+--------------------
+2025-04-25 00:41:38 | User: I have a meeting at 12:42 AM today
+2025-04-25 00:41:38 | Alpha: I'm sorry, I couldn't add that to your memory.  The system returned this error:  `Error processing date for adding memory: Could not understand the date 'today'. Error: ParserError: String does not contain a date: today. Please use formats like YYYY-MM-DD, 'today', 'Aug 5 2023', 'last Friday'.`  Could you please provide the date in one of the suggested formats?
+
+--------------------
+2025-04-25 00:43:06 | User: remind me I have a meeting at 12:45 am today
+2025-04-25 00:43:06 | Alpha: OK. I've set a reminder for you: "I have a meeting" at 12:45 AM today.
+
+--------------------
+2025-04-25 10:21:50 | User: remind me I have a meeting at 10:22 Am today
+2025-04-25 10:21:50 | Alpha: OK. I've set a reminder for you: "I have a meeting" at 10:22 AM today.
+
+--------------------
+2025-04-25 10:23:23 | User: remind me I have a meeting at 10:24 Am today
+2025-04-25 10:23:23 | Alpha: OK. I've set a reminder for you: "I have a meeting" at 10:24 AM today.
+
+--------------------
+2025-04-25 22:53:38 | User: what happened in april 19,2025
+2025-04-25 22:53:38 | Alpha: On April 19th, 2025, you attended a college reunion in Coimbatore.  Highlights included meeting old friends, giving a speech, and a group photo session.  You reported feeling happy.
+
+--------------------
+2025-04-25 22:54:15 | User: remind me i have a meeting at 11PM tomorrow
+2025-04-25 22:54:15 | Alpha: Okay, I've set a reminder for you:  Meeting at 11 PM tomorrow.
+
+--------------------
+2025-04-26 16:48:32 | User: i attended school reunion function at 28 april 2025
+2025-04-26 16:48:32 | Alpha: OK. I've added a memory for April 28th, 2025, labeled "Reunion," with the details "Attended school reunion function".
+
+--------------------
+2025-04-26 16:50:16 | User: the department association event will happen on 28 april 2025.
+2025-04-26 16:50:16 | Alpha: OK. I've added that to my memory for April 28th, 2025.  I've labeled it "Department Event" and noted that the department association event will happen that day.
+
+--------------------
+2025-08-24 07:06:00 | User: hi
+2025-08-24 07:06:00 | Alpha: Hi there! How can I help you today?
+
+--------------------
